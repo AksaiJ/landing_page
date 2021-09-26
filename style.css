@@ -1,6 +1,7 @@
 body {
     display: flex;
     flex-direction: column;
+    border: none !important;
 }
 
 /* header */
@@ -10,10 +11,11 @@ body {
     align-items: center;
     justify-content: space-between;
     
-  
+    padding: 10px 30px 10px 30px;
     height: 30px;
-    margin: 0 0 -30px 0;
+    margin: 0 0 -60px 0;
     z-index: 10;
+    border: none !important;
 }
 
 .header div:nth-of-type(1){
@@ -30,6 +32,7 @@ body {
 .header div ul li a {
     font-size: 18px;
     color: #E5E7EB;
+    text-decoration: none;
 }
 
 /* header end */
@@ -42,26 +45,319 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    height: 600px;
+    height: 500px;
+    margin: -10px -10px 0 -10px;
+    border: none !important;
 }
 .hero div {
-    width: 900px;
-    padding: 0 0 0 0;
-    margin: 0 auto;
+    width: max-content;
+    padding: 0 -50 0 -50px;
+    margin: 150px auto 50px auto;
     display: flex;
     flex-direction: row;
+    flex: 0 1;
+   
+    
+}
+.hero div div {
+    margin: 0 50px;
+    flex: 0 0;
 }
 .hero div div:nth-of-type(1) {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-items: left;
+    
+    width: 400px;
+    height: 300px;
+}
+.hero.main {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #F9FAF8;
+    margin: 0 0 10px 0;
+ }
+.hero div div div:nth-of-type(2){
+    font-size: 18px;
+    color: #E5E7EB;
+    margin: 10px 0 10px 0;
+} 
+.hero div div:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+    width: 400px;
+    height: 300px;
 }
 .hero div div:nth-of-type(2) img {
-    width: 300px;
+    width: 400px;
     height: 200px;
+    border-radius: 10px;
    
-  }
+}
+.hero .button {
+      flex: 0 0;
+      display: flex;
+      color: white;
+      padding: 10px 20px;
+      margin: 10px 0 10px 0;
+      background-color: rgb(87, 132, 255);
+      border: cornsilk;
+      border-width: thin;
+      border-radius: 10px;
+}
+.hero .button:hover {
+    background-color: #3882F6;
+}
+/*random info cards*/
+
+.somerandominfo {
+    flex: 0 0 auto;
+    margin: 0 -10px 0 -10px;
+    background-color: rgb(255, 255, 255);
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 0;
+   
+}
+.somerandominfo .somerandominfo.title {
+    width: 500px;
+    height: 30px;
+    margin: 30px 30px 50px 30px;
+    font-size: 36px;
+    font-weight: bolder; 
+    color: #000000;
+    align-self: center;
+    text-align: center;
+}
+.randominfocontenttiles {
+    flex: 0 0 auto;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    height: 300px;
+    width: 1000px;
+    display: flex;
+    flex: 0 0 0 0;
+    flex-direction: row;
+    align-self: center;
+   
+    justify-content: space-between;
+    
+}
+.randominfocontenttiles div {
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    width: 200px;
+    align-content: center;
+    gap: 10px;
+
+    text-align: center;
+    color: darkgray;
+}
+.randominfocontenttiles div img:hover, .randominfocontenttiles div:hover {
+    border-color: rgb(180, 112, 226);
+    color: rgb(128, 139, 236);
+}
+ 
+.randominfocontenttiles img {
+    width: 200px;
+    height: 200px;
+    border: solid royalblue;
+    border-width: 5px;
+    border-radius: 10px;
+}
+
+
+/* quote */ 
+
+
+.quote {
+    height: 400px;
+    margin: 0 -10px 0 -10px;
+    padding: 0 0 0 0;
+    background-color: #E5E7EB;
+    display: flex;
+    flex: 0 0 auto;
+}
+
+.quote div {
+    width: 800px;
+   
+    margin: auto;
+    display: block;
+    
+}
+.quotecontent:hover{
+    color: black;
+}
+.quotecontent{
+    text-align: center;
+    font-size: 36px;
+    margin: 30px 30px 0 30px;
+    font-style: italic;
+    text-align: center;
+    font-family: serif;
+    color: #1F2937;
+}
+.quote div div{
+    margin: -5px 0 0 0;
+    font-size: 28px;
+    font-weight: 20;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #1F2937;
+    text-align: end; 
+}
+
+
+
+/* signup */
+.signup {
+    flex: 0 0 auto;
+    margin: 0 -10px 0 -10px;
+    
+    
+    align-items: center;
+    justify-items: center;
+    height: 300px;
+    
+}
+
+
+.signup div {
+    all: revert;
+
+    width: 800px;
+    height: 100px;
+    margin: 100px auto 100px auto ;
+    
+    flex-direction: row;
+    flex: 0 0 0;
+    align-items: center;
+    display: flex;
+    background-color: rgb(87, 132, 255);
+    border: solid rgb(255, 255, 255);
+    border-width: 5px;
+    border-radius: 20px;
+    justify-content: space-around;
+    padding-right: 20px;
+    padding: revert;
+}
+.signup.text {
+    all: revert;
+    margin: 0 0 0 0; !important
+   display: flex;
+   flex-direction: column; !important
+   flex: 0 0 0;
+   align-items: flex-start;
+   
+}
+
+.signup.button {
+    
+    width: 100px;
+    height: 40px;
+    display: inline-flex;
+    background-color: rgb(255, 255, 255);
+    border: solid rgb(116, 162, 255);
+    color: rgb(0, 183, 255);
+    border-width: 2px;
+    border-radius: 5px;
+    font-weight: 900;
+
+}
+
+.signup.button:hover {
+    background-color: rgb(0, 183, 255);
+    color: white;
+   
+} 
+
+.signup div div {
+    all: revert;
+    
+    height: 30px;
+    width: 600px;
+    padding: 0;
+    margin: 0;
+    flex: 0 0 0;
+}
+
+.signup.buttons.div {
+    height: 60px;
+    width: 100px;
+    padding: 0 0 0 0;
+    margin: 0;
+    flex: 0 0 0;
+    all: revert;
+}
+
+.signup.text.top {
+    font-size: 32px;
+    height: 40px;
+    text-align: left;
+    color: white;
+    font-weight: 900;
+}
+.signup.text.bottom {
+    color: white;
+    font-weight: 600;
+}
+
+/* footer */
+
+.footer {
+    all: revert;
+    margin: auto -10px 0 -10px;
+    padding: 0 0 0 0;
+    background-color: #1f2937;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+.footer div {
+    width: max-content;
+    height: max-content;
+    font-size: 26px;
+    font-weight:700;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 .hero {
     padding: 60px 30px 30px 30px;
