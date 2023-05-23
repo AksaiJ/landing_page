@@ -1,6 +1,4 @@
-okay what do i type here man, i don't know bro.
-tell me what should I type here. Its not like anyone is gonna see this file is it ?
-nope i hope its not.
+
 
 
 Header Logo
